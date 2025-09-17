@@ -38,6 +38,8 @@ def main():
         i, j = map(int, input().split())
         i -= 1
         j -= 1
+        if i>3 or j>3:
+            print("Input out of range!)
         if not turn:
             game[i][j] = 'X'
         else:
